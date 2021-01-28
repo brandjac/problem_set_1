@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+<body>
     <head>
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -27,7 +28,32 @@
         <p>If you would like to look at my resume, here it is below for your review.</p>
         <br><iframe src="BJackson Resume.pdf" width="100%" height="500px"></iframe></br>
     </section>
-
+    
+<style>
+    body {
+        padding: 25px;
+        background-color: white;
+        color: black;
+        
+        }
+        
+    .dark-mode {
+        background-color: black;
+        color: white;
+        }
+</style>
+    </head>
+    <body>
+        
+        <button onclick="myFunction()">Toggle dark mode</button>
+        
+        <script>
+    function myFunction() {
+        var element = document.body;
+        element.classList.toggle("dark-mode");
+        }
+    </script>
+        
 
 <style> 
     .footer{
@@ -41,4 +67,4 @@
 </style>
 
 
-    <footer class="footer"> Brandon E. Jackson SI 579 2021. </footer>
+<footer class="footer"> Brandon E. Jackson SI 579 2021. </footer>

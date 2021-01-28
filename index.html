@@ -37,16 +37,36 @@
     <p>Here is a picture of me at Victoria Falls, in Zimbabwe.</p>
     <img src="zimvictoirafalls.jpg" alt="Victoria Falls">
 </section>
-
-
-
-<style> 
-    footer {
-        text-align: center;
+</head>
+    <body>
+    
+    
+    <button onclick="myFunction()">Toggle dark mode</button>
+    
+<script>
+    function myFunction() {
+    var element = document.body;
+    element.classList.toggle("dark-mode");
     }
-    img {
-        border-radius: 8px;
+</script>
+<style> 
+footer {
+    text-align: center;
 }
+img {
+    border-radius: 8px;
+}
+body {
+    padding: 25px;
+    background-color: white;
+    color: black;
+}
+    
+.dark-mode {
+    background-color: black;
+    color: white;
+    }
+
 @media only screen 
     and (device-width: 390px) 
     and (device-height: 844px) 
